@@ -58,13 +58,37 @@
 			children = (
 				A32AC4EB2B583D0C00C71A49 /* AppDelegate.swift */,
 				A32AC4ED2B583D0C00C71A49 /* SceneDelegate.swift */,
-				A32AC4EF2B583D0C00C71A49 /* ViewController.swift */,
-				A32AC4F12B583D0C00C71A49 /* Main.storyboard */,
+				A32AC5012B583D7800C71A49 /* Model */,
+				A32AC4FF2B583D5300C71A49 /* View */,
+				A32AC5002B583D5E00C71A49 /* Controller */,
 				A32AC4F42B583D0F00C71A49 /* Assets.xcassets */,
 				A32AC4F62B583D0F00C71A49 /* LaunchScreen.storyboard */,
 				A32AC4F92B583D0F00C71A49 /* Info.plist */,
 			);
 			path = Chatty;
+			sourceTree = "<group>";
+		};
+		A32AC4FF2B583D5300C71A49 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A32AC4F12B583D0C00C71A49 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A32AC5002B583D5E00C71A49 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A32AC4EF2B583D0C00C71A49 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A32AC5012B583D7800C71A49 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
