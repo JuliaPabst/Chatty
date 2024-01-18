@@ -8,11 +8,8 @@
 import UIKit
 
 class LogInViewController: UIViewController {
-
     @IBOutlet var usernameTextField: UITextField!
-    
     @IBOutlet var passwordTextField: UITextField!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,4 +19,9 @@ class LogInViewController: UIViewController {
     @IBAction func login(_ sender: UIButton) {
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "GoToChatViewController" {
+                let destinationVC = segue.destination as! ChatViewController
+            }
+        }
 }
