@@ -1,13 +1,13 @@
 //
-//  ViewController.swift
+//  ChatViewController.swift
 //  Chatty
 //
-//  Created by Julia Pabst on 17.01.24.
+//  Created by Julia Pabst on 18.01.24.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class ChatViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
