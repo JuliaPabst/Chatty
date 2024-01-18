@@ -66,6 +66,9 @@
                             <constraint firstItem="lyj-yB-3pA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vOL-Do-CmZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titelLabel" destination="lyj-yB-3pA" id="bFN-Nv-dRr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -113,6 +116,9 @@
                                             <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="32"/>
                                             <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="register:" destination="uO9-He-0V6" eventType="touchUpInside" id="26H-kJ-Zhi"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PJt-UU-b4m">
                                         <rect key="frame" x="0.0" y="210" width="353" height="40"/>
@@ -133,10 +139,14 @@
                             <constraint firstItem="hq2-Jp-3tP" firstAttribute="centerY" secondItem="B8R-Ab-q7A" secondAttribute="centerY" id="p85-ig-JdW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="dzq-uy-Oro" id="k1g-A9-snU"/>
+                        <outlet property="usernameTextField" destination="2Tu-aI-j3G" id="X9U-yu-EcS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vmi-Lx-zU1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="691" y="-2"/>
+            <point key="canvasLocation" x="676" y="-631"/>
         </scene>
         <!--Log In View Controller-->
         <scene sceneID="7UG-Bf-MQo">
@@ -180,6 +190,9 @@
                                             <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="32"/>
                                             <color key="baseForegroundColor" systemColor="systemCyanColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="login:" destination="iuA-5M-Ydq" eventType="touchUpInside" id="tcb-mq-IvN"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="48X-gg-xSZ">
                                         <rect key="frame" x="0.0" y="210" width="353" height="40"/>
@@ -198,11 +211,15 @@
                             <constraint firstItem="53X-rR-W0b" firstAttribute="centerY" secondItem="iuA-5M-Ydq" secondAttribute="centerY" id="dml-pV-T0H"/>
                             <constraint firstItem="53X-rR-W0b" firstAttribute="centerX" secondItem="iuA-5M-Ydq" secondAttribute="centerX" id="pnp-8Y-Mq8"/>
                         </constraints>
+                        <connections>
+                            <outlet property="passwordTextField" destination="on9-bd-fid" id="bg1-jz-rZk"/>
+                            <outlet property="usernameTextField" destination="fjN-ME-sh9" id="b7H-2B-fvZ"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rt2-cq-aCS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1337" y="-2"/>
+            <point key="canvasLocation" x="674" y="647"/>
         </scene>
         <!--Chat View Controller-->
         <scene sceneID="PMU-NS-qJc">
@@ -245,6 +262,9 @@
                                         <buttonConfiguration key="configuration" style="plain">
                                             <imageReference key="image" image="paperplane.fill" catalog="system" symbolScale="large"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="send:" destination="1GR-wK-h3z" eventType="touchUpInside" id="voE-av-0FX"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemCyanColor"/>
@@ -271,10 +291,14 @@
                             <constraint firstItem="wbJ-Cx-gbz" firstAttribute="leading" secondItem="42b-yQ-Sit" secondAttribute="leading" id="oV9-pu-sg6"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="messageTextField" destination="zBZ-DB-e8V" id="g90-hE-j1q"/>
+                        <outlet property="tableView" destination="wbJ-Cx-gbz" id="Sel-Wz-ntp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y7p-0u-Hkc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1992" y="-2"/>
+            <point key="canvasLocation" x="1321" y="-2"/>
         </scene>
     </scenes>
     <resources>

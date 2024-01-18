@@ -9,10 +9,15 @@ import UIKit
 
 class RegisterViewController: UIViewController {
 
+    @IBOutlet var usernameTextField: UITextField!
+    @IBOutlet var passwordTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func register(_ sender: UIButton) {
+    }
+    
 }
