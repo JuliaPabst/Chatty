@@ -8,7 +8,8 @@
 import UIKit
 
 class RegisterViewController: UIViewController {
-
+    
+    
     @IBOutlet var usernameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
@@ -16,14 +17,4 @@ class RegisterViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-    @IBAction func register(_ sender: UIButton) {
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            if segue.identifier == "GoToChatViewController" {
-                let destinationVC = segue.destination as! ChatViewController
-            }
-        }
-    
 }
