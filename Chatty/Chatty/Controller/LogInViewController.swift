@@ -17,5 +17,11 @@ class LogInViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    @IBAction func logInPressed(_ sender: UIButton) {
+        
+        if let email = usernameTextField.text, let password = passwordTextField.text{
+            
+        }
+    }
     
 }
