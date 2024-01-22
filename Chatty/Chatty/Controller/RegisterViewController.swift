@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FirebaseCore
+import FirebaseAuth
 
 class RegisterViewController: UIViewController {
     
@@ -16,5 +18,21 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    }
+    
+    
+    @IBAction func pressRegisterButton(_ sender: UIButton) {
+        
+        if let email = usernameTextField.text, let password = passwordTextField.text {
+            Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+                if let e = error {
+                    print(e)
+                } else {
+                    // Navigate to Chat View Controller
+                }
+            }
+        }
+        
+        
     }
 }
