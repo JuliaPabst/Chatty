@@ -307,7 +307,14 @@
                             <constraint firstItem="wbJ-Cx-gbz" firstAttribute="leading" secondItem="42b-yQ-Sit" secondAttribute="leading" id="oV9-pu-sg6"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="aZb-Ik-obg"/>
+                    <navigationItem key="navigationItem" id="aZb-Ik-obg">
+                        <barButtonItem key="rightBarButtonItem" title="Log out" id="5iu-Y0-U8n">
+                            <color key="tintColor" red="0.95470784890000004" green="0.99028069080000003" blue="0.98494993259999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="logOutPressed:" destination="1GR-wK-h3z" id="tVl-KP-egy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="messageTextField" destination="zBZ-DB-e8V" id="EbP-3x-ZYX"/>
                         <outlet property="tableView" destination="wbJ-Cx-gbz" id="LBQ-Jl-Stf"/>
