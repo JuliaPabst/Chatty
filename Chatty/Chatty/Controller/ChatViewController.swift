@@ -18,7 +18,8 @@ class ChatViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        title = "Chatty 💬"
+        navigationItem.hidesBackButton = true
     }
 
     @IBAction func sendMessage(_ sender: UIButton) {
