@@ -8,8 +8,9 @@
 struct Constants {
     static let cellIdentifier = "ReusableCell"
     static let cellNibName = "MessageCell"
-    static let registerSegue = "RegisterToChat";
-    static let logInSegue = "LogInToChat";
+    static let registerSegue = "RegisterToChat"
+    static let logInSegue = "LogInToChat"
+    static let title = "Chatty 💬"
     
     struct FStore {
         static let collectionName = "messages"
