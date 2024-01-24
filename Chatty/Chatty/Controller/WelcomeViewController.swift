@@ -13,7 +13,7 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let titleText = "Chatty 💬"
+        let titleText = Constants.title
         var characterIndex = 0
         titleLabel.text = ""
         
