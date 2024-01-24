@@ -15,6 +15,7 @@ class ChatViewController: UIViewController {
     
     @IBOutlet var messageTextField: UITextField!
     
+    var messages: [Message] = [Message(sender: "ju@pabst.com", body: "hi"), Message(sender: "ju@pabst.com", body: "hello")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
