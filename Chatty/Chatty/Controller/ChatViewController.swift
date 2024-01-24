@@ -12,15 +12,15 @@ import FirebaseAuth
 class ChatViewController: UIViewController {
     
     @IBOutlet var tableView: UITableView!
-    
     @IBOutlet var messageTextField: UITextField!
     
-    var messages: [Message] = [Message(sender: "ju@pabst.com", body: "hi"), Message(sender: "ju@pabst.com", body: "hello")]
+    var messages: [Message] = [Message(sender: "ju@pabst.com", body: "hi"), Message(sender: "lukas@pabst.com", body: "hello"), Message(sender: "ju@pabst.com", body: "hello")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = Constants.title
         navigationItem.hidesBackButton = true
+        tableView.dataSource = self
     }
 
     @IBAction func sendMessage(_ sender: UIButton) {
@@ -37,3 +37,14 @@ class ChatViewController: UIViewController {
     
 }
 
+extension ChatViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
+    
+}
