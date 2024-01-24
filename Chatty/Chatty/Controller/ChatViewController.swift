@@ -21,6 +21,7 @@ class ChatViewController: UIViewController {
         title = Constants.title
         navigationItem.hidesBackButton = true
         tableView.dataSource = self
+        tableView.delegate = self
     }
 
     @IBAction func sendMessage(_ sender: UIButton) {
@@ -47,6 +48,10 @@ extension ChatViewController: UITableViewDataSource {
         cell.textLabel?.text = messages[indexPath.row].body
         return cell
     }
-    
-    
+}
+
+extension ChatViewController: UITableViewDelegate{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath.row)
+    }
 }
