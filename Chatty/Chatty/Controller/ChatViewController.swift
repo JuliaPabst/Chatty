@@ -8,6 +8,7 @@
 import UIKit
 import FirebaseCore
 import FirebaseAuth
+import FirebaseFirestore
 
 class ChatViewController: UIViewController {
     
@@ -25,6 +26,7 @@ class ChatViewController: UIViewController {
     }
 
     @IBAction func sendMessage(_ sender: UIButton) {
+        
     }
     
     @IBAction func logOutPressed(_ sender: UIBarButtonItem) {
@@ -35,6 +37,10 @@ class ChatViewController: UIViewController {
             print("Error signing out: %@", signOutError)
         }
     }
+    
+    
+    
+    
     
 }
 
@@ -48,6 +54,9 @@ extension ChatViewController: UITableViewDataSource {
         cell.label.text = messages[indexPath.row].body
         return cell
     }
+
+    
+
 }
 
 
