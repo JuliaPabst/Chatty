@@ -31,7 +31,7 @@ class ChatViewController: UIViewController {
 
     @IBAction func sendMessage(_ sender: UIButton) {
         if let messageBody = messageTextField.text, let messageSender = Auth.auth().currentUser?.email {
-            db.collection(Constants.FStore.collectionName).addDocument(data: [Constants.FStore.senderField: messageSender, Constants.FStore.bodyField: messageBody]) { (error) in
+            db.collection(Constants.FStore.collectionName).addDocument(data: [Constants.FStore.senderField: messageSender, Constants.FStore.bodyField: messageBody, Constants.FStore.dateField: Date().timeIntervalSince1970]) { (error) in
                 if let e = error {
                     print("There was an issue saving data to firestore: \(e)")
                 } else {
@@ -52,12 +52,12 @@ class ChatViewController: UIViewController {
     
     
     func loadMessages(){
-        messages = []
-        db.collection(Constants.FStore.collectionName).getDocuments { (querySnapshot, error) in
+        db.collection(Constants.FStore.collectionName).addSnapshotListener { (querySnapshot, error) in
             if let e = error {
                 print("There was an issue retrieving data from Firestore: \(e)")
             } else {
                 if let snapShotDocuments = querySnapshot?.documents{
+                    self.messages = []
                     for doc in snapShotDocuments{
                         let data = doc.data()
                         if let messageSender = data[Constants.FStore.senderField] as? String, let messageBody = data[Constants.FStore.bodyField] as? String{
@@ -71,13 +71,7 @@ class ChatViewController: UIViewController {
                 }
             }
         }
-        
     }
-    
-    
-
-    
-    
 }
 
 extension ChatViewController: UITableViewDataSource {
