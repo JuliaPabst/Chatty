@@ -26,7 +26,11 @@ class ChatViewController: UIViewController {
     }
 
     @IBAction func sendMessage(_ sender: UIButton) {
+        if let messageBody = messageTextField.text, let messageSender = Auth.auth().currentUser?.email {
+            
+        }
         
+      
     }
     
     @IBAction func logOutPressed(_ sender: UIBarButtonItem) {
@@ -40,6 +44,7 @@ class ChatViewController: UIViewController {
     
     
     
+
     
     
 }
