@@ -56,6 +56,12 @@ class ChatViewController: UIViewController {
         db.collection(Constants.FStore.collectionName).getDocuments { (querySnapshot, error) in
             if let e = error {
                 print("There was an issue retrieving data from Firestore: \(e)")
+            } else {
+                if let snapShotDocuments = querySnapshot?.documents{
+                    for doc in snapShotDocuments{
+                        print(doc.data())
+                    }
+                }
             }
         }
         
