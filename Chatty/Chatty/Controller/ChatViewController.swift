@@ -52,7 +52,7 @@ class ChatViewController: UIViewController {
     
     
     func loadMessages(){
-        db.collection(Constants.FStore.collectionName).addSnapshotListener { (querySnapshot, error) in
+        db.collection(Constants.FStore.collectionName).order(by: Constants.FStore.dateField).addSnapshotListener { (querySnapshot, error) in
             if let e = error {
                 print("There was an issue retrieving data from Firestore: \(e)")
             } else {
