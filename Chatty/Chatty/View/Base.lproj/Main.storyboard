@@ -252,7 +252,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NZ5-Ps-Fix">
                                 <rect key="frame" x="0.0" y="703" width="393" height="115"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write a message..." textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zBZ-DB-e8V">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write a message..." textAlignment="justified" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zBZ-DB-e8V">
                                         <rect key="frame" x="20" y="20" width="282.33333333333331" height="75"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="21"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -298,14 +298,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="aZb-Ik-obg">
                         <barButtonItem key="rightBarButtonItem" title="Log out" id="5iu-Y0-U8n">
-                            <color key="tintColor" systemColor="systemCyanColor"/>
+                            <color key="tintColor" systemColor="systemGroupedBackgroundColor"/>
                             <connections>
                                 <action selector="logOutPressed:" destination="1GR-wK-h3z" id="tVl-KP-egy"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="messageTextField" destination="zBZ-DB-e8V" id="EbP-3x-ZYX"/>
+                        <outlet property="messageTextField" destination="zBZ-DB-e8V" id="jbY-rA-7sh"/>
                         <outlet property="tableView" destination="wbJ-Cx-gbz" id="LBQ-Jl-Stf"/>
                     </connections>
                 </viewController>
@@ -321,6 +321,16 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="X04-KR-FFs">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemCyanColor"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" systemColor="systemCyanColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -345,6 +355,9 @@
         </systemColor>
         <systemColor name="systemCyanColor">
             <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiarySystemGroupedBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
