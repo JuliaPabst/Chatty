@@ -38,7 +38,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                <color key="backgroundColor" red="0.64987520879035832" green="0.88102227869314642" blue="0.99741337576297795" alpha="0.63001306799073886" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="6hL-5F-xV7" secondAttribute="bottom" constant="5" id="9J8-3N-ozT"/>
                                     <constraint firstItem="6hL-5F-xV7" firstAttribute="top" secondItem="zlZ-DE-fiB" secondAttribute="top" constant="5" id="Hak-nF-lhd"/>
@@ -67,6 +67,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="label" destination="6hL-5F-xV7" id="8hb-LV-ApC"/>
+                <outlet property="leftImageView" destination="RoL-jj-BqR" id="ocC-an-rF6"/>
                 <outlet property="messageBubble" destination="zlZ-DE-fiB" id="521-eK-YCv"/>
                 <outlet property="rightImageVIew" destination="RoL-jj-BqR" id="9m5-63-tvP"/>
             </connections>

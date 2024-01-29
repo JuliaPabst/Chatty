@@ -10,11 +10,9 @@ import UIKit
 class MessageCell: UITableViewCell {
 
     @IBOutlet var messageBubble: UIView!
-    
     @IBOutlet var label: UILabel!
-    
     @IBOutlet var rightImageVIew: UIImageView!
-    
+    @IBOutlet var leftImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
