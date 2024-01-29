@@ -90,12 +90,12 @@ extension ChatViewController: UITableViewDataSource {
         
         if message.sender == Auth.auth().currentUser?.email {
             cell.leftImageView.isHidden = true
-            cell.rightImageVIew.isHidden = false
+            cell.rightImageView.isHidden = false
             cell.messageBubble.backgroundColor = UIColor(named: "Blue")
             cell.label.textColor = UIColor(named: "LightBlue")
         } else {
             cell.leftImageView.isHidden = false
-            cell.rightImageVIew.isHidden = true
+            cell.rightImageView.isHidden = true
             cell.messageBubble.backgroundColor = UIColor(named: "LightBlue")
             cell.label.textColor = UIColor(named: "Blue")
         }
